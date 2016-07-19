@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{98663C53-9EB2-1175-0CF9-1D65BF123ACB}") = "Sword-VR-Project", "Assembly-CSharp.csproj", "{97325493-742D-DC26-6268-4A53CECB9F45}"
+EndProject
+Project("{98663C53-9EB2-1175-0CF9-1D65BF123ACB}") = "Sword-VR-Project", "Assembly-CSharp-Editor.csproj", "{9ED33AD6-B9B1-A708-F660-5337092215C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97325493-742D-DC26-6268-4A53CECB9F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97325493-742D-DC26-6268-4A53CECB9F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97325493-742D-DC26-6268-4A53CECB9F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97325493-742D-DC26-6268-4A53CECB9F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ED33AD6-B9B1-A708-F660-5337092215C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ED33AD6-B9B1-A708-F660-5337092215C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ED33AD6-B9B1-A708-F660-5337092215C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ED33AD6-B9B1-A708-F660-5337092215C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

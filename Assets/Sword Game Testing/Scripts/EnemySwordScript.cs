@@ -7,8 +7,6 @@ public class EnemySwordScript : MonoBehaviour {
 	public int Lives = 5;
 	public float Speed;
 
-	private bool Collided = false;
-
 	GameObject HMD;
 	void Start()
 	{
@@ -18,16 +16,14 @@ public class EnemySwordScript : MonoBehaviour {
 		if (HMD == null) {
 			Debug.Log ("HMD NOT initialized in EnemySwordScript");
 		}
-
 		Movement ();
 	}
 
 	void OnCollisionEnter (Collision other)
 	{
 		if (other.collider.CompareTag("PlayerSword")) {
-			Collided = true;
 			Lives -= other.gameObject.GetComponent<SwordScript> ().Damage;
-			GameObject.FindGameObjectWithTag("GameController").GetComponent<SwordUpdateTextsScript> ().AddHitCount ();
+			GameObject.FindGameObjectWithTag("GameController").GetComponent<SwordTextManagerScript> ().AddHitCount ();
 			if (Lives <= 0) {
 				Destroy (gameObject);
 			} 

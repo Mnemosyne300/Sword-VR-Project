@@ -9,11 +9,17 @@ public class SwordBulletScript : MonoBehaviour {
 	void Start () {
 
 		GetComponent<Rigidbody> ().AddForce (transform.forward * (FORCE * 100));
+
+        Destroy(gameObject, 30.0f);
 	
 	}
 
 	void OnCollisionEnter(Collision other)
 	{
-		Destroy (gameObject, 0.5f);
+        if (other.collider.CompareTag("Enemy"))
+        {
+		    Destroy (gameObject, 0.5f);
+        }
+        return;
 	}
 }

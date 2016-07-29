@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SwordChangeWeaponScript : MonoBehaviour {
 
-	private Valve.VR.EVRButtonId triggerButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
+	//private Valve.VR.EVRButtonId triggerButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Trigger;
 	private Valve.VR.EVRButtonId touchPadButton = Valve.VR.EVRButtonId.k_EButton_SteamVR_Touchpad;
 
 	private SteamVR_TrackedObject trackedObj;
@@ -12,7 +12,7 @@ public class SwordChangeWeaponScript : MonoBehaviour {
 	public GameObject[] Weapons;
 	private int currWeapon = 0;
 
-	private float Timer = 0;
+//	private float Timer = 0;
 
 	// Use this for initialization
 	void Start () {
